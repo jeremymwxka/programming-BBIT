@@ -45,10 +45,10 @@ vector<Match> generateFixtures(const vector<Team>& teams) {
     vector<Match> fixtures;
     int weekend = 1;
 
-    for (size_t i = 0; i < teams.size(); ++i) {
-        for (size_t j = i + 1; j < teams.size(); ++j) {
-            Match home_match = {teams[i].name, teams[j].name, teams[i].stadium, teams[i].town, 1, weekend};
-            Match away_match = {teams[j].name, teams[i].name, teams[j].stadium, teams[j].town, 2, weekend};
+    for (size_t n = 0; n < teams.size(); ++n) {
+        for (size_t m = n + 1; m < teams.size(); ++m) {
+            Match home_match = {teams[n].name, teams[m].name, teams[n].stadium, teams[n].town, 1, weekend};
+            Match away_match = {teams[m].name, teams[n].name, teams[m].stadium, teams[m].town, 2, weekend};
 
             fixtures.push_back(home_match);
             fixtures.push_back(away_match);

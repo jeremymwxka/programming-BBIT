@@ -73,7 +73,7 @@ vector<Match> generateFixtures(const vector<Team>& teams) {
     return fixtures;
 }
 
-// Function to schedule fixtures into weekends
+// Function is used to schedule weekend fixtures
 void scheduleFixtures(vector<Match>& fixtures) {
     int weekend = 1;
     for (size_t i = 0; i < fixtures.size(); i += 2) {
@@ -83,7 +83,7 @@ void scheduleFixtures(vector<Match>& fixtures) {
     }
 }
 
-// Function to output fixtures to console and file
+// Function is used to output the fixtures onto the console and the file
 void outputFixtures(const vector<Match>& fixtures) {
     ofstream outFile("C:\\Users\\jerem\\OneDrive\\Desktop\\Programming.bbit\\fixtures.csv");
 

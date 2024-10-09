@@ -45,7 +45,7 @@ vector<Team> loadTeamsFromCSV(const string& filename) {
     return teams;
 }
 
-// Function to generate fixtures
+// Function being used to generate fixtures 
 vector<Match> generateFixtures(const vector<Team>& teams) {
     vector<Match> fixtures;
     int weekendCounter = 1;
